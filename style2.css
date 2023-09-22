@@ -29,11 +29,14 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-size: cover;
   }
 @keyframes slideshow {
     0%, 100% { background-image: url('img/bg2.png'); }
     50% { background-image: url('/img/gb.png'); }
   }
+
+
 .landing::before {
     content: ""; /* Create a pseudo-element for the background */
     position: absolute;
@@ -42,10 +45,11 @@ a {
     width: 100%;
     height: 100%;
     z-index: -1;
-    animation: slideshow 10s linear infinite; /* Adjust the duration and timing as needed */
+    animation: slideshow 10s linear infinite ; /* Adjust the duration and timing as needed */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
   }
  #read-btn {
     color: #ffffff;
@@ -134,9 +138,9 @@ a {
   }
   @media only screen and (max-width: 600px){
     .scroll-down-btn{
-        top:95%;
+        top:85%;
+        
     }
-
   }
   .read-more-btn {
     display: inline-block;
@@ -183,3 +187,11 @@ video {
 padding-top: 30px;
   display: in-block;
 } 
+@media only screen and (max-width: 600px){
+  video
+   {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+}
