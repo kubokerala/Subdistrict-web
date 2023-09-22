@@ -33,7 +33,7 @@ a {
   }
 @keyframes slideshow {
     0%, 100% { background-image: url('img/bg2.png'); }
-    50% { background-image: url('/img/gb.png'); }
+    50% { background-image: url('img/gb.png'); }
   }
 
 
