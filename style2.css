@@ -18,14 +18,13 @@ a {
 .header-title {
     font-size: 36px;
     display: inline-block;
-    position: relative;
-    
+    position: relative;   
   }
 .landing {
     text-align: center;
     position: relative;
     overflow: hidden;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,8 +34,6 @@ a {
     0%, 100% { background-image: url('img/bg2.png'); }
     50% { background-image: url('img/gb.png'); }
   }
-
-
 .landing::before {
     content: ""; /* Create a pseudo-element for the background */
     position: absolute;
@@ -51,31 +48,18 @@ a {
     background-position: center center;
     background-attachment: fixed;
   }
- #read-btn {
-    color: #ffffff;
-    text-decoration: none;
-  }
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Overlay color */
-  }
-.landing h1 {
+
+
+.main-title {
     font-size: 70px;
-    font-weight: 600;
-    background-image: linear-gradient(to left, #553c9a, #b393d3);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+    color:#d1c6c6;
+    text-shadow: 0 0 6px #000000, 0 0 7px #77fdaa;
   }
-.section {
+  .section {
     max-width: 960px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #e8faf2;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 .section h2 {
@@ -100,7 +84,6 @@ a {
     object-fit: cover;
     margin-top: 20px;
     border: 2px solid #1abc9c;
-    transition: border-color 0.3s ease-in-out;
   }
   footer {
     text-align: center;
@@ -108,33 +91,25 @@ a {
     background-color: #1abc9c;
     color: #fff;
   }
-  .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .date-time {
+  .title {
     font-size: 24px;
-    font-weight: 600;
-    background-image: linear-gradient(to left, #8462e4, #7616d6);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+    color: #ffff;
   }
+
   .scroll-down-btn {
     position: absolute;
     top: 50%;
     right: 20px; /* Adjust the distance from the right edge */
-    padding: 10px 20px;
+    padding: 10px;
     background-color: #1abc9c;
     color: #fff;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 9px;
     }
+
   .scroll-down-btn:hover {
     background-color: #16a085;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
   @media only screen and (max-width: 600px){
     .scroll-down-btn{
@@ -150,18 +125,15 @@ a {
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
-    font-size: 16px;
     margin-top: 20px;
     }
   .read-more-btn:hover {
     background-color: #16a085;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
   }  
-.navbar {
-    background-color: #333;
-    padding: 10px 0;
-    background-color: transparent;
+  
+.navbar {  
+    padding: 10px;
 }
 .navbar ul {
     list-style: none;
@@ -176,7 +148,6 @@ a {
 .navbar a {
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
     font-size: 18px;
 }
 .navbar a:hover {
@@ -187,6 +158,7 @@ video {
 padding-top: 30px;
   display: in-block;
 } 
+
 @media only screen and (max-width: 600px){
   video
    {
